@@ -1,18 +1,34 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { IntroComponent } from './intro/intro.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { ContentComponent } from './content/content.component';
+import { TeamComponent } from './team/team.component';
+import { FooterComponent } from './footer/footer.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
+import { HeaderComponent } from './header/header.component';
+import { SocialComponent } from './social/social.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ConfigService } from './config.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    IntroComponent,
+    GalleryComponent,
+    ContentComponent,
+    TeamComponent,
+    FooterComponent,
+    RoadmapComponent,
+    HeaderComponent,
+    SocialComponent,
+    NavigationComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule],
+  providers: [ConfigService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
