@@ -27,7 +27,8 @@ import { ConfigService } from './config.service';
     SocialComponent,
     NavigationComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule,
+     AppRoutingModule],
   providers: [ConfigService],
   bootstrap: [AppComponent]
 })
