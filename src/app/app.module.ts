@@ -13,6 +13,7 @@ import { SocialComponent } from './social/social.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ConfigService } from './config.service';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ConfigService } from './config.service';
     NavigationComponent
   ],
   imports: [BrowserModule,
-     AppRoutingModule],
+     AppRoutingModule,
+     NgxPageScrollCoreModule.forRoot({ duration: 500 })],
   providers: [ConfigService],
   bootstrap: [AppComponent]
 })
