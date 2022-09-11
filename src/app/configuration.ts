@@ -1,9 +1,9 @@
 export const configuration = {
   header: {
-    heading: 'BubbleBees Nfts',
+    heading: 'BubbleBees NFTs',
     headingtext:
-      'The bubble bees are under attack, will they survive?',
-    buttontext: 'help the bees',
+      'A dinamic world of bubble bees:                                                                            ',
+    buttontext: 'join the hive',
     buttonlink: '\home'
   }
 };
