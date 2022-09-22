@@ -25,15 +25,15 @@
 
 .card-container {
   height: 100%;
-  background: #b4b1ba;
+  background: #2f2b3a;
 }
 
 .card-container h3 {
   padding: 25px;
 }
-
+/* scroll-container */
 .scroll-container {
-  max-width: 1200px;
+  /* max-width: 1200px;
   top: 5%;
   right: 10%;
   position: fixed;
@@ -41,12 +41,107 @@
   flex-direction: row;
   z-index: 9999;
   background-color: #6f697d;
-  opacity: 0.7;
+  opacity: 0.7; */
+  opacity: 0.6;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  top: 0;
+  z-index: 9999;
+  background-color: #2f2b3a;
+  padding-top: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  width: 100%;
+}
+
+shadow-none {
+  box-shadow: none !important;
 }
 
 .scroll-container:hover {
   opacity: 1;
 }
+@media (min-width: 992px) {
+  .scroll-container-expand-lg {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+/**/
+/* brand */
+.navbar-brand {
+  padding-top: 0.40625rem;
+  padding-bottom: 0.40625rem;
+  margin-right: 1rem;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+.navbar-brand img{
+  width:210px;
+}
+@media (min-width: 380px) and (max-width: 767px) {
+  .navbar-brand img {
+    width:90px;
+  }
+
+  .step-media{
+    display: none;
+  }
+
+  .section-heading {
+    padding: 125px 0 0px 0;
+}
+}
+.font-weight-bolder {
+  font-weight: 700!important;
+}
+
+@media (min-width: 576px) {
+  .ms-sm-3 {
+    margin-left: 1rem !important;
+  }
+}
+/**/
+
+/* navbar */
+.navbar{
+  width: 100%;
+  flex-grow: 1;
+    align-items: center;
+    display: flex!important;
+    flex-basis: auto;
+}
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: auto!important;
+}
+/*  */
+
+/* Social Media */
+.navbar-media{
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin-left: auto!important;
+}
+
+.nav-item{
+  margin-right: 0.5rem!important;
+  margin-left: 0.5rem!important;
+  align-items: center!important;
+  display: flex!important;
+}
+/*  */
 
 .step-section {
   padding: 8px;
@@ -57,12 +152,128 @@
 .vertical-nav {
   flex: 3;
 }
+.social-icon{
+  padding-top: 20px;
+  padding-right: 8px;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
+
+#banner {
+  background: url("../assets/images/header.png") no-repeat center top;
+  background-size: cover;
+}
 
 #banner {
   height: 120vh;
 }
+#banner-content.row {
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+
+#banner h1 {
+    padding-top: 5%;
+}
+
+#banner .section-heading:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 30px;
+}
+/*------------------------------------------------------------------------------------------*/
+/* 2. RoadMap */
+/*------------------------------------------------------------------------------------------*/
+#roadmap-content{
+  background: url("../assets/images/roadmap.png") no-repeat center top;
+  background-size: cover;
+}
+
+.roadmap-block-content {
+  background: #2f2b3a;;
+  padding: 25px 25px 25px 25px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.07);
+  transition: all 0.2s ease-in-out 0s;
+  position: relative;
+}
+
+.roadmap-block ul {
+  list-style: none;
+  margin: 25px 0 25px 0;
+}
+
+.roadmap-block li {
+  padding: 14px 0;
+  border-bottom: 1px dotted #e1e1e1;
+}
+
+.roadmap-block li:last-of-type {
+  border:none;
+}
+
+.roadmap-block h3 {
+  font-size:17px;
+  text-transform:uppercase;
+  padding-bottom:0;
+  color:#d2b356;
+}
+
+.roadmap-sub {
+  font-style: italic;
+  color:#ccc;
+  margin:0 0 25px 0;
+}
+
+.roadmap {
+  background: #f5f5f5;
+  padding: 25px;
+  position: relative;
+}
+/*------------------------------------------------------------------------------------------*/
+/* 3. Team */
+/*------------------------------------------------------------------------------------------*/
+#team-content {
+  background: url("../assets/images/team.png") no-repeat center top;
+  background-size: cover;
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Save the bees */
+/*------------------------------------------------------------------------------------------*/
 #savebees-content {
-  background: url("../assets/images/bees.png") no-repeat center top;
+  background: url("../assets/images/savethebees.png") no-repeat center top;
   background-size: cover;
   height: 200vh;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  #savebees-content {
+    background: url("../assets/images/savethebees-mobile.png") no-repeat center top;
+    background-size: cover;
+    height: 200vh;
+  }
+}
+
+/* ----------Banner Buttons---------- */
+
+/* Button Text */
+.button {
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+  font-size:16px;
+  color:white;
+}
+
+/* Button Color */
+.button {
+  border-color:white;
+}
+
+/* Button Hover Color */
+.button:hover {
+  color:#d2b356;
+  border-color:#d2b356;
 }

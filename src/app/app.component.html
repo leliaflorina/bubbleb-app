@@ -18,51 +18,117 @@
 </div>
 <!--Main Content Area-->
 <div class="main-container">
-  <div class="scroll-container">
-    <!-- Home -->
-    <div
-      class="step-section"
-      [ngClass]="{ active: activeSection === 1 }"
-      pageScroll
-      (click)="scrollTo(home, 1)"
+  <div class="scroll-container scroll-container-expand-lg shadow-none">
+    <!-- Brand -->
+    <a
+      class="navbar-brand font-weight-bolder ms-sm-3"
+      href="https://www.bublebees-nfts.com"
+      target="_blank"
+      rel="noreferrer"
     >
-      <div class="vertical-nav">
-        <div class="section-name">Home</div>
-      </div>
-    </div>
+      <img alt="logo" src="../assets/images/logo.png"
+    /></a>
+    <div class="navbar">
+      <div class="navbar-nav">
+        <!-- Home -->
+        <div
+          class="step-section"
+          [ngClass]="{ active: activeSection === 1 }"
+          pageScroll
+          (click)="scrollTo(home, 1)"
+        >
+          <div class="vertical-nav">
+            <div class="section-name">Home</div>
+          </div>
+        </div>
 
-    <!-- Roadmap -->
-    <div
-      class="step-section"
-      [ngClass]="{ active: activeSection === 3 }"
-      pageScroll
-      (click)="scrollTo(roadmap, 3)"
-    >
-      <div class="vertical-nav">
-        <div class="section-name">Roadmap</div>
-      </div>
-    </div>
+        <!-- Roadmap -->
+        <div
+          class="step-section"
+          [ngClass]="{ active: activeSection === 3 }"
+          pageScroll
+          (click)="scrollTo(roadmap, 3)"
+        >
+          <div class="vertical-nav">
+            <div class="section-name">Roadmap</div>
+          </div>
+        </div>
 
-    <!-- Team -->
-    <div
-      class="step-section"
-      [ngClass]="{ active: activeSection === 2 }"
-      pageScroll
-      (click)="scrollTo(team, 2)"
-    >
-      <div class="vertical-nav">
-        <div class="section-name">Team</div>
-      </div>
-    </div>
-    <!-- Save the bees -->
-    <div
-      class="step-section"
-      [ngClass]="{ active: activeSection === 4 }"
-      pageScroll
-      (click)="scrollTo(savethebees, 4)"
-    >
-      <div class="vertical-nav">
-        <div class="section-name">Save the Bees</div>
+        <!-- Team -->
+        <div
+          class="step-section"
+          [ngClass]="{ active: activeSection === 2 }"
+          pageScroll
+          (click)="scrollTo(team, 2)"
+        >
+          <div class="vertical-nav">
+            <div class="section-name">Team</div>
+          </div>
+        </div>
+        
+        <!-- Save the bees -->
+        <div
+          class="step-section"
+          [ngClass]="{ active: activeSection === 4 }"
+          pageScroll
+          (click)="scrollTo(savethebees, 4)"
+        >
+          <div class="vertical-nav">
+            <div class="section-name">Save the Bees</div>
+          </div>
+        </div>
+
+        <!-- Telegram -->
+        <div class="step-media">
+          <div class="social-icon">
+            <a
+              href="https://"
+              class="text-dark text-uppercase text-lg mb-2 mb-lg-0"
+              target="_blank"
+              title="Telegram"
+              ><i class="fa fa-telegram fa-1x"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Discord -->
+        <div class="step-media">
+          <div class="social-icon">
+            <a href="https://www.youtube.com/" class="fa fa-discord"> </a>
+            <a
+              href="https://"
+              class="text-dark text-uppercase text-lg mb-2 mb-lg-0"
+              target="_blank"
+              title="Discord"
+              class="fa fa-discord"
+            ></a>
+          </div>
+        </div>
+        <!-- Tweeter -->
+        <div class="step-media">
+          <div class="social-icon">
+            <a
+              target="_blank"
+              title="Twitter"
+              href="http://www.twitter.com/username"
+            >
+              <i class="fa fa-twitter fa-1x"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Instagram -->
+        <div class="step-media">
+          <div class="social-icon">
+            <a
+              href="https://"
+              class="text-dark text-uppercase text-lg mb-2 mb-lg-0"
+              target="_blank"
+              title="Instagram"
+              ><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -76,11 +142,11 @@
             <div class="section-heading">
               <h1>{{ header.heading }}</h1>
               <h4>{{ header.headingtext }}</h4>
-            <h4>
-              <label>Wake up    </label>
-              <label>   Reconstruction     </label>
-              <label>   Thrive    </label>
-            </h4>
+              <h4>
+                <label>Wake up </label>
+                <label> Reconstruction </label>
+                <label> Thrive </label>
+              </h4>
             </div>
 
             <!--Call to Action-->
@@ -99,7 +165,7 @@
     <div class="card-container">
       <!--roadmap Tables-->
       <section
-        id="roadmap"
+        id="roadmap-content"
         class="secondary-color text-center scrollto clearfix"
       >
         <div class="row clearfix">
@@ -113,7 +179,12 @@
               <h3>Wake Up</h3>
               <!-- <p class="roadmap-sub">Wake Up</p> -->
               <ul>
-                <li>After a long winter the bublebees woke up in a different world. The distruction of nature left them disordered and unsettled. Our mission is to set up a place where they can rebuild what was lost.</li>
+                <li>
+                  After a long winter the bublebees woke up in a different
+                  world. The distruction of nature left them disordered and
+                  unsettled. Our mission is to set up a place where they can
+                  rebuild what was lost.
+                </li>
                 <li>Launch of limited edition BlubbleBees Nfts</li>
                 <li>First 1000 Common, Rare and Super rare colony of bees</li>
                 <li>Website launch</li>
@@ -132,12 +203,18 @@
               <h3>Reconstruction</h3>
               <!-- <p class="roadmap-sub">Reconstruction</p> -->
               <ul>
-                <li>The community now have the resources to build their hive. They organize and work hard to create their homes.</li>
+                <li>
+                  The community now have the resources to build their hive. They
+                  organize and work hard to create their homes.                     
+
+
+                </li>
                 <li>Launch of second edition</li>
                 <li>Collection of 1000 nfts</li>
                 <li>Community rewards</li>
-                <li></li>
-                <li></li>
+                <li> To be defined</li>
+                <li>To be defined</li>
+                <li>To be defined</li>
               </ul>
               <a href="#" class="button">MINT BEES</a>
             </div>
@@ -148,12 +225,16 @@
               <h3>Thrive</h3>
               <!-- <p class="roadmap-sub">Thrive</p> -->
               <ul>
-                <li>The habitat is growing and everybody enjoys the happy new way of life that is constantly expanding</li>
+                <li>
+                  The habitat is growing and everybody enjoys the happy new way
+                  of life that is constantly expanding
+                </li>
                 <li>Release 1000 + Rare + Super rare colony</li>
                 <li>Unlimited Extensions</li>
                 <li>HD Video Tutorials</li>
                 <li>Partnerships with beekeepers and honey producers</li>
                 <li>Launch of BubbleBees lamp</li>
+                <li>To be defined</li>
               </ul>
               <a href="#" disbled="true" class="button">MINT BEES</a>
             </div>
@@ -165,8 +246,8 @@
 
   <div #team class="scroll-outer">
     <div class="card-container">
-      <aside
-        id="testimonials"
+      <div
+        id="team-content"
         class="scrollto text-center"
         data-enllax-ratio=".2"
       >
@@ -175,7 +256,7 @@
             <h2 class="section-title">Meet our team</h2>
           </div>
 
-          <!--User Testimonial-->
+          <!--Team composition-->
           <div class="test-container">
             <blockquote class="col-2 testimonial classic">
               <img
@@ -208,7 +289,7 @@
           </div>
           <!-- End of Testimonial-->
         </div>
-      </aside>
+      </div>
       <!--End of Testimonials-->
     </div>
   </div>
@@ -228,5 +309,4 @@
       </div>
     </div>
   </div>
-
 </div>
