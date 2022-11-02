@@ -7,7 +7,9 @@
 
 # dependencies
 /node_modules
-
+/.angular
+/.angular/cache
+/.angular/cache/13.3.5
 # profiling files
 chrome-profiler-events.json
 speed-measure-plugin.json
@@ -42,3 +44,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+.angular/cache/13.3.5/angular-webpack/1fd1aa2a812266f13f12764fa10cacf4788bf7be/0.pack
+.angular/cache/13.3.5/angular-webpack/1fd1aa2a812266f13f12764fa10cacf4788bf7be/2.pack
+.angular/cache/13.3.5/angular-webpack/1fd1aa2a812266f13f12764fa10cacf4788bf7be/3.pack
