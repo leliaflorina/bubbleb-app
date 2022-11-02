@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var configuration = {\n  header: {\n    heading: 'BubbleBees Nfts',\n    headingtext: 'The bubble bees are under attack, will they survive?',\n    buttontext: 'help the bees',\n    buttonlink: '\\home'\n  }\n};","map":null,"metadata":{},"sourceType":"module"}
