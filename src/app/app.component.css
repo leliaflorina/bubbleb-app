@@ -172,7 +172,6 @@ shadow-none {
 #banner {
   background: url("../assets/images/header.png") no-repeat center top;
   background-size: cover;
-  min-height: 200vh;
 }
 
 #banner {
@@ -193,6 +192,12 @@ shadow-none {
   width: 30px;
   height: 5px;
   margin-top: 30px;
+}
+@media (min-width: 280px) and (max-width: 767px)  {
+  #banner {
+    background: url("../assets/images/header.png") no-repeat right top;
+    background-size: cover;
+  }
 }
 /*------------------------------------------------------------------------------------------*/
 /* 2. RoadMap */
@@ -252,6 +257,8 @@ shadow-none {
   /* min-height: 200vh; */
 }
 
+
+
 /*------------------------------------------------------------------------------------------*/
 /* 4. Save the bees */
 /*------------------------------------------------------------------------------------------*/
@@ -260,11 +267,12 @@ shadow-none {
   background-size: cover;
   min-height: 200vh;
 }
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 280px) and (max-width: 767px)  {
   #savebees-content {
     background: url("../assets/images/savethebees-mobile.png") no-repeat center
       top;
-    background-size: cover;
+      background-size: 900px 1000px;
+    /* background-size: cover; */
     min-height: 200vh;
   }
 }

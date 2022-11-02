@@ -54,7 +54,7 @@ p {
 
 .row img {
     height: auto;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 a {
@@ -908,7 +908,7 @@ h6 {
 }
 
 .testimonial {
-    padding: 15px;
+    padding: 40px;
 }
 
 blockquote {
@@ -916,7 +916,7 @@ blockquote {
 }
 
 .testimonial img {
-    max-height: 250px;
+    max-height: 350px;
     border-radius: 250em;
 }
 
