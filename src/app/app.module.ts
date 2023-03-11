@@ -14,6 +14,7 @@ import { NavigationComponent } from "./navigation/navigation.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ConfigService } from "./config.service";
 import { NgxPageScrollCoreModule } from "ngx-page-scroll-core";
+import { NgxPageScrollModule } from "ngx-page-scroll";
 import {
   FontAwesomeModule,
   FaIconLibrary,
@@ -38,14 +39,13 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
     AppRoutingModule,
     FontAwesomeModule,
     NgxPageScrollCoreModule.forRoot({ duration: 500 }),
+    // NgxPageScrollModule,
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent],
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(
-      faDiscord,
-    );
+    library.addIcons(faDiscord);
   }
 }
