@@ -3,7 +3,8 @@
   margin-left: auto;
   margin-right: auto;
   height: 100vh;
-  /* max-width: 1000px;   */
+  width: 100%;
+  overflow-x: clip;
 }
 
 .scroll-outer {
@@ -155,19 +156,22 @@ shadow-none {
 .vertical-nav {
   flex: 3;
 }
-.social-icon {
-  padding-top: 20px;
-  padding-right: 8px;
-}
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
 .banner-media {
   display: flex;
   align-content: center;
   justify-content: center;
 }
-
-/*------------------------------------------------------------------------------------------*/
-/* 4. Banner */
-/*------------------------------------------------------------------------------------------*/
+.banner-media .social-icon a {
+  color: white;
+}
+.social-icon {
+  padding-top: 20px;
+  padding-right: 8px;
+}
 
 #banner {
   background: url("../assets/images/header.png") no-repeat center top;
@@ -193,7 +197,7 @@ shadow-none {
   height: 5px;
   margin-top: 30px;
 }
-@media (min-width: 280px) and (max-width: 767px)  {
+@media (min-width: 280px) and (max-width: 767px) {
   #banner {
     background: url("../assets/images/header.png") no-repeat right top;
     background-size: cover;
@@ -257,8 +261,6 @@ shadow-none {
   /* min-height: 200vh; */
 }
 
-
-
 /*------------------------------------------------------------------------------------------*/
 /* 4. Save the bees */
 /*------------------------------------------------------------------------------------------*/
@@ -267,13 +269,42 @@ shadow-none {
   background-size: cover;
   min-height: 200vh;
 }
-@media (min-width: 280px) and (max-width: 767px)  {
+
+#right-content.row {
+  right: -40%;
+  top:-200px
+}
+
+p.p1 {
+  padding-right: 50px;
+}
+
+p.p2 {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+
+p.p3 {
+  padding-left: 120px;
+  padding-right: 50px;
+}
+
+p.p4{
+padding-left: 120px;
+padding-right: 50px;
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
   #savebees-content {
     background: url("../assets/images/savethebees-mobile.png") no-repeat center
       top;
-      background-size: 900px 1000px;
+    background-size: 900px 1000px;
     /* background-size: cover; */
     min-height: 200vh;
+  }
+  #right-content.row {
+    top:-200px;
+    right:-20px;
   }
 }
 
