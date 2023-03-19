@@ -272,10 +272,15 @@ shadow-none {
 
 #right-content.row {
   right: -40%;
-  top:-200px
+  top: -200px;
+}
+.bees-content {
+  background-color: #2f2b3a;
+  opacity: 0.9;
 }
 
 p.p1 {
+  padding-left: 30px;
   padding-right: 50px;
 }
 
@@ -285,13 +290,13 @@ p.p2 {
 }
 
 p.p3 {
-  padding-left: 120px;
+  padding-left: 30px;
   padding-right: 50px;
 }
 
-p.p4{
-padding-left: 120px;
-padding-right: 50px;
+p.p4 {
+  padding-left: 30px;
+  padding-right: 50px;
 }
 
 @media (min-width: 280px) and (max-width: 767px) {
@@ -303,8 +308,8 @@ padding-right: 50px;
     min-height: 200vh;
   }
   #right-content.row {
-    top:-200px;
-    right:-20px;
+    top: -200px;
+    right: -20px;
   }
 }
 
