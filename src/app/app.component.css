@@ -94,7 +94,7 @@ shadow-none {
   }
 
   .section-heading {
-    padding: 125px 0 0px 0;
+    padding: 140px 0 0px 0;
   }
   /* h4 .social-icon {
     display: flex;
@@ -209,7 +209,7 @@ shadow-none {
 #roadmap-content {
   background: url("../assets/images/roadmap.png") no-repeat center top;
   background-size: cover;
-  min-height: 200vh;
+  /* min-height: 200vh; */
 }
 
 .roadmap-block-content {
@@ -251,6 +251,13 @@ shadow-none {
   background: #f5f5f5;
   padding: 25px;
   position: relative;
+}
+@media (min-width: 280px) and (max-width: 767px) {
+  #roadmap-content {
+    background: url("../assets/images/roadmap.png") no-repeat center top;
+    /* background-size: 900px 1000px; */
+    min-height: 200vh;
+  }
 }
 /*------------------------------------------------------------------------------------------*/
 /* 3. Team */
