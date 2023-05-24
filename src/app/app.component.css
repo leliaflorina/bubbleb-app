@@ -199,7 +199,7 @@ shadow-none {
 }
 @media (min-width: 280px) and (max-width: 767px) {
   #banner {
-    background: url("../assets/images/header.png") no-repeat right top;
+    background: url("../assets/images/Home_Background.png") no-repeat center top;
     background-size: cover;
   }
 }
@@ -321,16 +321,27 @@ h4 {
 
 @media (min-width: 280px) and (max-width: 767px) {
   #savebees-content {
-    background: url("../assets/images/savethebees-mobile.png") no-repeat center
+    background: url("../assets/images/OurStory_Background.png") no-repeat center
       top;
-    background-size: 900px 1000px;
+    background-size: 450px 1100px;
     /* background-size: cover; */
     min-height: 200vh;
   }
+
   #right-content.row {
     top: -200px;
     right: -20px;
   }
+
+.bees-content {
+  background-color: #2f2b3a;
+  opacity: 0.9;
+  text-align:justify;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-top: 210px;
+  }
+  
   .container {
     flex-direction: column;
     align-items: center;
