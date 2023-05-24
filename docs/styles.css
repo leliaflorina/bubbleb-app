@@ -970,7 +970,13 @@ blockquote {
     left: 50%;
 }
 
-
+/**
+ * Featherlight – ultra slim jQuery lightbox
+ * Version 1.3.3 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
 @media all {
     .featherlight {
         display: none;
@@ -1426,6 +1432,11 @@ blockquote {
     text-align: center;
 }
 
+/*!
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
 .la-ball-triangle-path,
 .la-ball-triangle-path > div {
     position: relative;
@@ -1777,7 +1788,7 @@ blockquote {
     }
 
     /* Footer */
- 
+  
 
     #landing-footer .social-icons {
         float: right;
