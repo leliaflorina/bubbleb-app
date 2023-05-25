@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   title = "BubbleBeesNfts";
   public activeSection: number = 1;
 
-  @ViewChildren("home, roadmap, team, savethebees") elms: QueryList<any>;
+  @ViewChildren("home, roadmap, team, ourstory, wesupport") elms: QueryList<any>;
   detectedElms = [];
 
   detectElms() {
@@ -71,8 +71,8 @@ export class AppComponent implements OnInit {
 }
 
 function isInViewport (elm) {
-  var elementTop = elm.offsetTop;
-  var elementBottom = elementTop + elm.offsetHeight;
+  var elementTop = elm.offsetTop-100;
+  var elementBottom = elementTop + elm.offsetHeight-100;
 
   // in this specific case the scroller is document.documentElement (<html></html> node)
   var viewportTop = document.documentElement.scrollTop;
