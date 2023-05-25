@@ -28,6 +28,8 @@
     >
       <img alt="logo" src="../assets/images/logo.png"
     /></a>
+
+    <!-- Menu -->
     <div class="navbar">
       <div class="navbar-nav">
         <!-- Home -->
@@ -78,6 +80,18 @@
           </div>
         </div>
 
+        <!-- We Support -->
+        <div
+          class="step-section"
+          [ngClass]="{ active: activeSection == 5 }"
+          pageScroll
+          (click)="scrollTo(wesupport, 5)"
+        >
+          <div class="vertical-nav">
+            <div class="section-name">We Support</div>
+          </div>
+        </div>
+
         <!-- Telegram -->
         <!-- <div class="step-media">
           <div class="social-icon">
@@ -108,7 +122,7 @@
         <div class="step-media">
           <div class="social-icon">
             <a
-              href="https:www.instagram.com/bubblebeesnft"
+              href="https://www.instagram.com/bubblebeesnft"
               class="text-dark text-uppercase text-lg mb-2 mb-lg-0"
               target="_blank"
               title="Instagram"
@@ -132,6 +146,7 @@
     </div>
   </div>
 
+  <!-- Home -->
   <div id="1" #home class="scroll-outer">
     <div class="card-container">
       <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
@@ -168,7 +183,7 @@
                 <!-- Instagram -->
                 <div class="social-icon">
                   <a
-                    href="https:www.instagram.com/bubblebeesnft"
+                    href="https://www.instagram.com/bubblebeesnft"
                     class="text-dark text-uppercase text-lg mb-2 mb-lg-0"
                     target="_blank"
                     title="Instagram"
@@ -202,6 +217,7 @@
     </div>
   </div>
 
+  <!-- Roadmap -->
   <div id="2" #roadmap class="scroll-outer">
     <div class="card-container">
       <!--roadmap Tables-->
@@ -331,8 +347,9 @@
                 alt="User"
               />
               <q
-                >Responsible for developing, deploying, securing and managing
-                the technical infrastructure that supports the creation and
+                >Believing in the transformative power of blending art and technology.
+                Bringing together the best of both worlds to create a digital realm where art flourishes and technology amplifies the human experience.
+                Responsible for the technical side that supports the creation and
                 storage of unique digital assets on a blockchain.</q
               >
               <footer>Florina Clapon - IT specialist</footer>
@@ -369,7 +386,7 @@
                   collection features are crafted by passionate members about
                   both art and environmental conservation.
                 </p>
-              
+
                 <p class="p1">
                   The NFTs in this project are more than just digital artworks.
                   They serve as a bridge between the virtual and physical
@@ -395,7 +412,7 @@
                       community that shares a passion for art and bee
                       conservation.
                     </p>
-                    </div>
+                  </div>
                   <div class="box">
                     <h4>Limited Editions</h4>
                     <p>
@@ -430,10 +447,68 @@
             </div>
           </div>
         </div>
+       
+        <!-- End Our Story content -->
+      </div>
+    </div>
+  </div>
+
+  <div id="5" #wesupport class="scroll-outer">
+    <div class="card-container">
+      <div
+        id="support-content"
+        class="secondary-color text-center scrollto clearfix"
+      >
+        <div class="row clearfix">
+          <div class="section-heading">
+            <h2 class="section-title">We support</h2>
+          </div>
+          <h4>Communities with shared values and ideals</h4>
+          <!-- We support content -->
+          <!-- Via Transilvanica -->
+          <div class="wesupport-container col-2">
+            <blockquote class="row partners classic">
+              <div class="support-item">
+              <img
+                class="avatar"
+                src="../assets/images/ViaTransilvanica.png"
+                alt="User"
+              />
+            </div>
+            <div class="support-item">
+              <p>
+                Via Transilvanica - „The road that unites”
+                is a long-distance trail of 1,400 kilometers that crosses Romania diagonally, from Putna to Drobeta Turnu Severin. Whether you're an avid hiker, a cycling enthusiast, or an equestrian lover, this trail offers an unforgettable experience.
+                Via Transilvanica serves as a bridge connecting communities, promoting unity, and fostering a deeper understanding of Romania's rich cultural heritage.
+                A project by Tăşuleasa Social, an NGO that deals with environmental preservation, education, social welfare, cultural development, and more.
+              </p>
+              <footer><a href="https://www.viatransilvanica.com/"  target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i> Via Transilvanica</a></footer>
+            </div>
+            </blockquote>
+          </div>
+
+          <!-- AppAps -->
+          <div class="wesupport-container col-2">
+            <blockquote class="row partners classic">
+              <div class="support-item">
+              <img
+                class="avatar"
+                src="../assets/images/logo-appaps.png"
+                alt="User"
+              />
+              </div>
+              <div class="support-item">
+              <p>Association for the Protection of Wild Bees and Pollinators. With a mission to raise awareness about the invaluable contribution of bees to our environment, through engaging and immersive workshops, they bring bees right in front of the eyes of children and adults alike. Through their projects, this organization is sowing the seeds of compassion and cultivating a profound appreciation for the crucial role that bees play in our world. By nurturing this understanding, they empower individuals to take action, becoming ambassadors for the conservation of wild bees and pollinators.</p>
+              <footer><a href="https://appaps.org/"  target="_blank"><i class="fa fa-arrow-right" aria-hidden="true"></i> Appaps</a></footer>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        <!-- Footer -->
         <footer id="landing-footer" class="clearfix">
           <div class="row clearfix">
-            <p id="copyright" >
-              <i class="fa fa-copyright fa-1x"></i> 2023, BubbleBees <br>
+            <p id="copyright">
+              <i class="fa fa-copyright fa-1x"></i> 2023, BubbleBees <br />
               Creating a buzz. Making an impact.
             </p>
             <!--Social Icons in Footer-->
@@ -443,9 +518,9 @@
             <!--End of Social Icons in Footer-->
           </div>
         </footer>
-        <!-- End Our Story content -->
       </div>
     </div>
+    <!-- </div> -->
   </div>
-  <!-- </div> -->
+  
 </div>

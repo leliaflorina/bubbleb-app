@@ -21,7 +21,6 @@
 .step-section.active .section-name {
   border-bottom: 2px solid #d2b356;
   font-size: 15px;
-  font-weight: ;
 }
 
 .card-container {
@@ -84,33 +83,6 @@ shadow-none {
 .navbar-brand img {
   width: 210px;
 }
-@media (min-width: 280px) and (max-width: 767px) {
-  .navbar-brand img {
-    width: 90px;
-  }
-
-  .step-media {
-    display: none;
-  }
-
-  .section-heading {
-    padding: 140px 0 0px 0;
-  }
-  /* h4 .social-icon {
-    display: flex;
-  } */
-}
-.font-weight-bolder {
-  font-weight: 700 !important;
-}
-
-@media (min-width: 576px) {
-  .ms-sm-3 {
-    margin-left: 1rem !important;
-  }
-}
-/**/
-
 /* navbar */
 .navbar {
   width: 100%;
@@ -157,8 +129,49 @@ shadow-none {
   flex: 3;
 }
 
+@media (min-width: 280px) and (max-width: 767px) {
+  .navbar-brand img {
+    width: 90px;
+  }
+  .section-name {
+    max-width: 100px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+  }
+
+  .step-section {
+    padding: 5px;
+    background-color: cream;
+    justify-content: flex-start;
+  }
+
+  .step-media {
+    display: none;
+  }
+
+  .section-heading {
+    padding: 140px 0 0px 0;
+  }
+  /* h4 .social-icon {
+    display: flex;
+  } */
+}
+.font-weight-bolder {
+  font-weight: 700 !important;
+}
+
+@media (min-width: 576px) {
+  .ms-sm-3 {
+    margin-left: 1rem !important;
+  }
+}
+/**/
+
+
+
 /*------------------------------------------------------------------------------------------*/
-/* 4. Banner */
+/* 1. Banner */
 /*------------------------------------------------------------------------------------------*/
 .banner-media {
   display: flex;
@@ -268,6 +281,10 @@ shadow-none {
   /* min-height: 200vh; */
 }
 
+.testimonial.classic footer:before {
+  background: #d2b356;
+}
+
 /*------------------------------------------------------------------------------------------*/
 /* 4. Save the bees */
 /*------------------------------------------------------------------------------------------*/
@@ -325,7 +342,7 @@ h4 {
       top;
     background-size: 450px 1100px;
     /* background-size: cover; */
-    min-height: 200vh;
+    /* min-height: 200vh; */
   }
 
   #right-content.row {
@@ -341,7 +358,7 @@ h4 {
   padding-top: 10px;
   margin-top: 210px;
   }
-  
+
   .container {
     flex-direction: column;
     align-items: center;
@@ -351,6 +368,67 @@ h4 {
     margin-bottom: 20px;
   }
 }
+
+/*------------------------------------------------------------------------------------------*/
+/* 5. WeSupport */
+/*------------------------------------------------------------------------------------------*/
+#support-content {
+  background: url("../assets/images/roadmap.png") no-repeat center top;
+  background-size: cover;
+  /* min-height: 200vh; */
+}
+.partners{
+  border: 2px solid ;
+  border-radius: 1.5rem;
+  padding: 1em;
+}
+.partners img {
+  max-height: 100px;
+  border-radius: 250em;
+}
+
+.support-item footer:before {
+  background: #d2b356;
+}
+.support-item footer:before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 4px;
+  margin: 10px auto 15px auto;
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+  #support-content {
+    background: url("../assets/images/roadmap.png") no-repeat center top;
+    background-size: cover;
+  }
+  .partners.row{
+    max-width: 95%;
+  }
+  .support-item{
+    padding: 15px;
+  }
+}
+
+/*------------------------------------------------------------------------------------------*/
+/* 6. Footer */
+/*------------------------------------------------------------------------------------------*/
+
+#landing-footer, #landing-footer p, #landing-footer a {
+  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+  font-size:12px;
+  font-weight:normal;
+  color:#999;
+  background-color: #2f2b3a;
+}
+
+/* Footer Icon Color */
+
+#landing-footer i {
+  color:#999;
+}
+
 
 /* ----------Banner Buttons---------- */
 

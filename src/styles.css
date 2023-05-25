@@ -2252,7 +2252,9 @@ body {
 /* Default Link Color */
 
 a, .la-ball-triangle-path {
-    color:#d2b356;
+    color:white;
+    font-weight: bold;
+    font-stretch: expanded;
 }
 
 a:hover, #header.nav-solid nav a:hover {
@@ -2323,7 +2325,7 @@ a:hover, #header.nav-solid nav a:hover {
     background:#d2b356;
     content:"";
     display:block;
-    width:30px;
+    width:90px;
     height:5px;
     margin-top:30px;
 }
