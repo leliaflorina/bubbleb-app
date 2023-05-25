@@ -5,6 +5,7 @@ import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
 import { ConfigService } from "./config.service";
 import { NgxPageScrollCoreModule } from "ngx-page-scroll-core";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   FontAwesomeModule,
   FaIconLibrary,
@@ -20,6 +21,7 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons";
     AppRoutingModule,
     FontAwesomeModule,
     NgxPageScrollCoreModule.forRoot({ duration: 500 }),
+    BrowserAnimationsModule
   ],
   providers: [ConfigService],
   bootstrap: [AppComponent],
