@@ -256,7 +256,7 @@ AppComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵ
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](105, " The community now have the resources to build their hive. They organize and work hard to create their homes. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](106, "li");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](107, " Build up our platform that will integrate marketing value for smallbussinesses, craftsman, festivals and lots of good deals for our Nfts holders ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](107, " Build up our platform that will integrate marketing value for small bussinesses, craftsmen, festivals and lots of good deals for our Nfts holders ");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](108, "li");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](109, " Launch limitless edition of Golden Buzzer (those are intended for people that want to promote their business, product, sale offers) ");
@@ -575,8 +575,8 @@ __webpack_require__.r(__webpack_exports__);
 const configuration = {
   header: {
     heading: 'BubbleBees NFTs',
-    headingtext: 'A collection of digital artworks celebrating the vital role of bees in our ecosystem.                                                                          ',
-    buttontext: 'join the hive',
+    headingtext: 'Welcome to the enchanting world of BubbleBees. A collection of digital artworks celebrating the vital role of bees in our ecosystem.                                                                          ',
+    buttontext: 'Join the hive',
     buttonlink: '\home'
   }
 };
