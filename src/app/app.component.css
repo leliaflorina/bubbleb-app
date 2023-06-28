@@ -168,8 +168,6 @@ shadow-none {
 }
 /**/
 
-
-
 /*------------------------------------------------------------------------------------------*/
 /* 1. Banner */
 /*------------------------------------------------------------------------------------------*/
@@ -301,7 +299,7 @@ shadow-none {
 .bees-content {
   background-color: #2f2b3a;
   opacity: 0.9;
-  text-align:justify;
+  text-align: justify;
   padding-bottom: 20px;
 }
 
@@ -321,17 +319,22 @@ p.p1 {
 }
 
 .box {
-  flex-basis: 30%;
+  flex-basis: 49%;
   background-color: #4d485a;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+.bold {
+  font-weight: bolder;
+  font-stretch: semi-expanded;
+  padding: 10px 0px 10px 0px;
+}
 h4 {
   font-size: 18px;
   margin-bottom: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 24px;
   font-weight: bold;
 }
@@ -350,13 +353,13 @@ h4 {
     right: -20px;
   }
 
-.bees-content {
-  background-color: #2f2b3a;
-  opacity: 0.9;
-  text-align:justify;
-  padding-bottom: 20px;
-  padding-top: 10px;
-  margin-top: 210px;
+  .bees-content {
+    background-color: #2f2b3a;
+    opacity: 0.9;
+    text-align: justify;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top: 210px;
   }
 
   .container {
@@ -377,8 +380,8 @@ h4 {
   background-size: cover;
   /* min-height: 200vh; */
 }
-.partners{
-  border: 2px solid ;
+.partners {
+  border: 2px solid;
   border-radius: 1.5rem;
   padding: 1em;
 }
@@ -403,10 +406,10 @@ h4 {
     background: url("../assets/images/roadmap.png") no-repeat center top;
     background-size: cover;
   }
-  .partners.row{
+  .partners.row {
     max-width: 95%;
   }
-  .support-item{
+  .support-item {
     padding: 15px;
   }
 }
@@ -415,20 +418,21 @@ h4 {
 /* 6. Footer */
 /*------------------------------------------------------------------------------------------*/
 
-#landing-footer, #landing-footer p, #landing-footer a {
-  font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-  font-size:12px;
-  font-weight:normal;
-  color:#999;
+#landing-footer,
+#landing-footer p,
+#landing-footer a {
+  font-family: "Open Sans", sans-serif, Arial, Helvetica;
+  font-size: 12px;
+  font-weight: normal;
+  color: #999;
   background-color: #2f2b3a;
 }
 
 /* Footer Icon Color */
 
 #landing-footer i {
-  color:#999;
+  color: #999;
 }
-
 
 /* ----------Banner Buttons---------- */
 
